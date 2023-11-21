@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 
 const MONGO_URI = "mongodb+srv://manikandansitpl3:83mb1dmaopS%40@mobilecluster0.nkmpjqj.mongodb.net/"
 
+///"mongodb+srv://manikandansitpl3:83mb1dmaopS40%@mobilecluster0.nkmpjqj.mongodb.net/?retryWrites=true&w=majority"
 mongoose
   .connect(MONGO_URI, {
     useNewUrlParser: true,
