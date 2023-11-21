@@ -33,7 +33,7 @@ const adddetails = () => {
     };
 
     axios
-      .post("http://localhost:8000/addEmployee", employeeData)
+      .post("https://victorious-hare-stole.cyclic.app/addEmployee", employeeData)
       .then((response) => {
         Alert.alert(
           "Registration Successful",

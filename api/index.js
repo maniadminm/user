@@ -8,8 +8,7 @@ const port = 8000;
 const cors = require("cors");
 app.use(cors());
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(express.json())
 
 const MONGO_URI = "mongodb+srv://manikandansitpl3:83mb1dmaopS%40@mobilecluster0.nkmpjqj.mongodb.net/ems"
 
