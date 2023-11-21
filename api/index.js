@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 
 mongoose
-  .connect("mongodb+srv://manikandansitpl3:83mb1dmaopS%40@mobilecluster0.nkmpjqj.mongodb.net/?retryWrites=true&w=majority", {
+  .connect("mongodb+srv://manikandansitpl3:83mb1dmaopS40%@mobilecluster0.nkmpjqj.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
