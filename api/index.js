@@ -14,6 +14,19 @@ app.use(bodyParser.json());
 const MONGO_URI = "mongodb+srv://manikandansitpl3:83mb1dmaopS%40@mobilecluster0.nkmpjqj.mongodb.net/"
 
 ///"mongodb+srv://manikandansitpl3:83mb1dmaopS40%@mobilecluster0.nkmpjqj.mongodb.net/?retryWrites=true&w=majority"
+
+const connectDB = async () => {
+  try {
+    const conn = await mongoose.connect(MONGO_URI);
+    console.log(`MongoDB Connected: ${conn.connection.host}`);
+  } catch (error) {
+    console.log(error);
+    process.exit(1);
+  }
+}
+
+connectDB();
+
 mongoose
   .connect(MONGO_URI, {
     useNewUrlParser: true,
