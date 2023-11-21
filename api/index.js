@@ -11,8 +11,9 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+const MONGO_URL = "mongodb+srv://manikandansitpl3:83mb1dmaopS%40@mobilecluster0.nkmpjqj.mongodb.net/?retryWrites=true&w=majority"
 mongoose
-  .connect("mongodb+srv://sujan:sujan@cluster0.zv7uvht.mongodb.net/", {
+  .connect(MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
